@@ -14,10 +14,10 @@ export const App = () => {
             <input placeholder="Senha" type="password"/>
             <Button text="Entrar"/>
           </form>
-          <p>Ainda não tem? <a href="#">Crie uma conta</a></p>
+          <p>Ainda não tem? <a href="/">Crie uma conta</a></p>
         </div>
  
-        <img src={svg}/>
+        <img src={svg} alt="sucesso"/>
       </div>
 
       <footer><a href="https://storyset.com/worker">Worker illustrations by Storyset</a></footer>
