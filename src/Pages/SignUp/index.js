@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import { Container } from "./styles"
@@ -6,11 +5,6 @@ import svg from "./svg.svg"
 import { Button } from "../../Components/button"
 
 export const SignUp = () => {
-	const [newName, setNewName] = useState()
-	const [newLogin, setNewLogin] = useState()
-	const [newPass, setNewPass] = useState()
-	// "newName", "newLogin" e "newPass" são valores reais, que podem passar pela validação/criação de um novo usuário.
-
 	return(
 		<Container>
 			<div>
@@ -18,9 +12,9 @@ export const SignUp = () => {
 				<div>
 					<h1>Cadastrar</h1>
 					<form onSubmit={() => {alert(`o site só tem o propósito de mostrar a parte visual, e não de ser funcional. Suas informações não serão guardadas em nenhum lugar, Não se preocupe.`)}}>
-						<input placeholder="Nome"  type="user"     onChange={(props) => setNewName (props.target.value)}/>
-						<input placeholder="Email" type="email"    onChange={(props) => setNewLogin(props.target.value)}/>
-						<input placeholder="Senha" type="password" onChange={(props) => setNewPass (props.target.value)}/>
+						<input placeholder="Nome"  type="user"    />
+						<input placeholder="Email" type="email"   />
+						<input placeholder="Senha" type="password"/>
 						<Button text="Cadastrar"/>
 					</form>
 					<Link to={"/"}>Já tenho uma conta</Link>
